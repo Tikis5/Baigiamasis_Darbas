@@ -1,0 +1,68 @@
+.fancy-header {
+    font: normal 16px/26px "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #303030;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    border-bottom: 1px solid coral;
+}
+
+.services-header {
+    grid-area: am;
+}
+
+.main {
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+
+.main > div {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    /*width: 200px;*/
+    padding: 20px;
+    float: left;
+}
+
+main form {
+    width: min-content;
+}
+
+main section {
+    color: black;
+    font-size: 20px;
+    display: flex;
+}
+
+main.contact-info {
+    display: flex;
+}
+
+main ul > li {
+    color: black;
+    font-size: 12px;
+    list-style: none;
+    margin: 5px;
+    width: 100%;
+}
+
+main span {
+    color: black;
+}
+
+#map .mobile {
+    display: none;
+}

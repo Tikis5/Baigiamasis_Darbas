@@ -1,0 +1,8 @@
+@media screen and (max-width: 837px) {
+    #map .desktop {
+        display: none;
+    }
+    #map .mobile {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,38 @@
+.section-header {
+    grid-area: sh;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+    border-bottom: 5px double coral;
+    border-top: 1px solid coral;
+}
+
+main .features {
+    margin: 0 100px 0 100px;
+}
+
+.features {
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+}
+
+.features figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    /*width: 200px;*/
+    padding: 20px;
+    float: left;
+}
+
+.features figure img {
+    border-radius: 10%;
+    box-shadow: gray 0 0 10px;
+    width: 400px;
+}

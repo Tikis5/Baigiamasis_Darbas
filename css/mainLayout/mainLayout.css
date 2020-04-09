@@ -1,5 +1,5 @@
 html, body {
-    background: rgb(58, 58, 58);
+    background: #eaeaea;
     color: white;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -8,19 +8,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template-areas:
-            'h h h h h h h h h h h h'
-            'sh sh sh sh sh sh sh sh sh sh sh sh'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'm m m m m m m m m m m m'
-            'f f f f f f f f f f f f';
+    grid-template-areas: 'h h h h h h h h h h h h' 'am am am am am am am am am am am am' 'ams ams ams ams ams ams ams ams ams ams ams ams' 'm m m m m m m m m m m m' 'm m m m m m m m m m m m' 'm m m m m m m m m m m m' 'm m m m m m m m m m m m' 'm m m m m m m m m m m m' 'm m m m m m m m m m m m' 'm m m m m m m m m m m m' 'm m m m m m m m m m m m' 'f f f f f f f f f f f f';
     grid-auto-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
@@ -49,7 +37,7 @@ header .mobile {
 }
 
 header .logo a {
-    background-image: url("/img/logo2.png");
+    background-image: url("/img/logoMain.png");
     background-size: 120px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -77,44 +65,20 @@ nav div li > a:hover, .active {
     color: black;
 }
 
-/*MAIN*/
-/*FEATURES*/
-.section-header {
-    grid-area: sh;
-    background: #eaeaea;
-    color: black;
-    margin-bottom: -20px;
-    text-align: center;
+/*ABOUT*/
+div.aboutMe {
+    grid-area: am;
 }
 
-section {
+div.aboutMassage {
+    grid-area: ams;
+}
+
+/*MAIN*/
+main {
     grid-area: m;
 }
 
-.features {
-    background: #eaeaea;
-    color: gray;
-    padding: 20px;
-    display: flex;
-    flex-direction: initial;
-    flex-wrap: wrap;
-}
-
-.features figure {
-    margin: auto;
-    text-align: center;
-    text-transform: uppercase;
-    /*width: 200px;*/
-    padding: 20px;
-    float: left;
-}
-
-.features figure img {
-    /*border: 1px solid white;*/
-    border-radius: 10%;
-    box-shadow: gray 0 0 10px;
-    width: 400px;
-}
 
 /*FOOTER*/
 footer {
@@ -122,13 +86,13 @@ footer {
     background: black;
     color: gray;
     font-size: 20px;
-    /*padding: 5px 5px;*/
-    /*text-align: center;*/
-    /*width: 1fr;*/
+    padding: 0 200px 0 200px;
 }
-.contact-info{
+
+.contact-info {
     display: flex;
 }
+
 footer ul > li {
     color: #aaa;
     font-size: 12px;

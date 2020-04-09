@@ -1,0 +1,48 @@
+.fancy-header {
+    font: normal 16px/26px "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #303030;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    border-bottom: 1px solid coral;
+}
+
+.services-header {
+    grid-area: am;
+}
+
+.services {
+    grid-area: ams;
+    justify-content: center;
+    margin: auto 100px;
+}
+
+div.services ul {
+    color: black;
+    width: 198px;
+    list-style-type: none;
+    font-size: 18px;
+    border-bottom: 1px dotted coral;
+
+}
+
+.services div {
+    margin: auto;
+    text-transform: uppercase;
+    float: left;
+}
+
+.services {
+    padding: 20px;
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+}
+
